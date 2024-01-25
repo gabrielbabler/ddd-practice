@@ -1,0 +1,18 @@
+"Um agregado eh um conjunto de objetos associados que tratamos como uma unidade para proposito de mudanca de dados"
+Eric Evans
+
+
+Customer     -->    Address
+- entity            - value object
+
+Order     (1-n) --> Item
+- entity            - entity
+
+Toda vez que eu crio um Customer, nao necessariamente eu preciso criar uma Order.
+Order precisa de um Customer.
+
+O que identifica um Customer para uma Order? CustomerID
+
+Neste caso temos:
+Customer Aggregate -> Customer (Root) e Address
+Order Aggregate -> Order(Root) e Item

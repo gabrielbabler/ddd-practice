@@ -1,0 +1,19 @@
+"Quando voce se preocupa apneas com os atributos de um elemento de um model, classifique isso como um Value Object"
+"Trate o Value Object como imutavel"
+Eric Evans
+
+Ele nao muda, ele eh trocado.
+
+Address:
+- Street
+- City
+- State
+- Zip Code
+
+Eu nao altero de endereco, eu TROCO de endereco.
+Conjunto de dados que representam aquilo para o sistema.
+
+Regras de VO:
+- Tem que estar semprer se auto-validando, estado tem que estar coesa - nao posso criar um novo CPF se a formula nao esta batendo.
+- Value Object nao tem ID, pq ele eh um conjunto de propriedades, nao eh unico.
+- Ele eh imutavel. Vc nao muda, vc troca. Eu vou criar um novo VO e trocar o atual.
