@@ -1,7 +1,7 @@
-import Address from "./Aggregate/address";
-import CustomerAggregate from "./Aggregate/customer";
-import Order from "./Aggregate/order";
-import OrderItem from "./Aggregate/order_item";
+import Address from "./3.Aggregate/address";
+import CustomerAggregate from "./3.Aggregate/customer";
+import Order from "./3.Aggregate/order";
+import OrderItem from "./3.Aggregate/order_item";
 
 let customer = new CustomerAggregate("123", "Wesley");
 const address = new Address("Rua 1", 2, "12345-678", "Sao Paulo");
