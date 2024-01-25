@@ -14,7 +14,8 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "npm run tsc -- --noEmit && jest",
+    "tsc": "tsc"
   },
   "author": "",
   "license": "ISC"
