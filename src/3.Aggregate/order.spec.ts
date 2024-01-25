@@ -22,8 +22,8 @@ describe("Order unit tests", () => {
     });
 
     it("should calculate total", () => {
-        const item1 = new OrderItem("123", "Item 1", 10);
-        const item2 = new OrderItem("1222", "Item 2", 15);
+        const item1 = new OrderItem("123", "Item 1", 10, 1);
+        const item2 = new OrderItem("1222", "Item 2", 15, 1);
 
         const order = new Order("123", "22", [item1]);
         const total = order.total();
