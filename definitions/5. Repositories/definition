@@ -1,0 +1,5 @@
+"Um repositorio comumente se refere a um local de armazenamento, geralmente considerado um local de seguranca ou preservacao dos itens nele armazenados. Quando voce armazena algo em um repositorio e depois retorna para recupera-lo, voce espera que ele esteja no mesmo estado que estava quando voce colocou la. Em algum momento, voce pode optar por remover o item armazenado do repositorio."
+Vernon
+
+"Esses objetos semelhantes a colecao sao sobre persistencia. Todo tipo Agregado persistente tera um Repositorio. De um modo geral, existe uma relacao um-para-um entre um tipo Agregado e um Repositorio."
+Vernon
