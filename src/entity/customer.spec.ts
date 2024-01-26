@@ -1,4 +1,5 @@
 import Address from "./address";
+import Customer from "./customer";
 import CustomerAggregate from "./customer";
 
 describe("Customer unit tests", () => {
@@ -49,5 +50,18 @@ describe("Customer unit tests", () => {
             const customer = new CustomerAggregate("123", "John");
             customer.activate();
         }).toThrow("Address is mandatory to activate a customer");
+    });
+
+    it("should add reward points", () => {
+        const customer = new Customer("1", "Customer 1");
+        expect(customer.rewardPoints).toBe(0);
+
+        customer.addRewardPoints(10);
+
+        expect(customer.rewardPoints).toBe(10);
+
+        customer.addRewardPoints(10);
+
+        expect(customer.rewardPoints).toBe(20);
     });
 });
