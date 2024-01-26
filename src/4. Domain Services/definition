@@ -1,0 +1,17 @@
+"Um servico de dominio eh uma operacao sem estado que cumpre uma tarefa especifica do dominio. Muitas vezes, a melhor indicacao de que voce deve criar um Servico no modelo de dominio eh quando a operacao que voce precisa executar nao se encaixar como um metodo em um Agregado (10) ou um Objeto de Valor (6)"
+Vernon
+
+"Quando um processo ou transformacao significativa no dominio nao for uma responsabilidade natural de uma ENTIDADE ou OBJETO DE VALOR, adicione uma operacao ao modelo como uma interface autonoma declarada como um SERVICO. Defina a interface em baseada na linguagem do modelo de dominio e certifique-se de que o nome da operacao faca parte do UBIQUITOUS LANGUAGE. Torne o SERVICE sem estado."
+Eric Evans
+
+SERVICE IS STATELESS!
+
+Roda na camada de dominio, nas regras de negocio.
+
+- Uma entidade pode realizar uma acao que vai afetar todas as entidades?
+- Como realizar uma operacao em lote?
+- Como calcular algo cuja as informacoes constam em mais de uma entidade?
+
+Domain Services: Cuidados
+- Quando houver muitos Domain Services em seu projeto, TALVEZ, isso pode indicar que seus agregados estao anemicos.
+- Domain Services sao Stateless
